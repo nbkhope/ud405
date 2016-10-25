@@ -72,7 +72,7 @@ public class DrawTheCantorGasket extends ApplicationAdapter {
         // TODO: Call punchCantorGasket on all 8 other squares
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                if (i != 1 && j != 1) {
+                if (i != 1 || j != 1) {
                     punchCantorGasket(x + i * step, y + j * step, step, recursions - 1);
                 }
             }
